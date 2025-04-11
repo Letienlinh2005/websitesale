@@ -95,6 +95,12 @@ body {
     font-size: 24px;
 }
 
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
 .pictures{
     height: 400px;
     width: 400px;
@@ -208,6 +214,9 @@ button {
     min-height: 650px;
 }
 
+#swap{
+    display: none;
+}
 #main-left {
     flex: 65%;
     background: white;
@@ -418,6 +427,28 @@ textarea {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+}
+.car-list-header{
+    padding: 20px;
+    display: flex; 
+    flex-direction: row; 
+    width: 90%;
+    max-width: 1200px;
+}
+.car-list-header h2{
+    color: #1A5DA0;
+    margin-right: 20px;
+}
+.car-list-header p{
+    margin-right: 100px;
+}
+.car-list-header span{
+    color: #333;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
 }
 .car-list {
     display: flex;
@@ -652,6 +683,9 @@ textarea {
         gap: 5px;
         
     }
+    #separator {
+        display: none;
+    }
     
     #filter a {
         width: 100%;
@@ -675,10 +709,36 @@ textarea {
         width: 100%;
     }
     .slider-container{
-        display: none;
+        width: 100%;
+        height: 200px;
+        
     }
+
     .pictures{
         display: none;
+    }
+    #main-right{
+        display: none;
+    }
+    #swap{
+        display: block;
+        padding: 20px;
+        text-align: center;
+        
+    }
+    #swap button{
+        width: 75px;
+        padding: 10px;
+        background-color: #1A5DA0;
+        color: white;
+        border-radius: 20px;
+        border: none;
+    }
+    #swap button:hover{
+        background-color: #083f97;
+    }
+    #swap button.active{
+        background-color: red;
     }
     .car-list {
         display: flex;
@@ -728,7 +788,6 @@ textarea {
     #car-type a {
         width: 48%;
     }
-    
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {

@@ -48,13 +48,13 @@
         <div class="slider">
             <div class="slider-container">
                 <div class="slide" style="transform: translateX(0);">
-                    <img src="vf6-1.jpg" alt="Slide 1" height="400" width="800">
+                    <img src="vf6-1.jpg" alt="Slide 1">
                 </div>
                 <div class="slide" style="transform: translateX(100%);">
-                    <img src="VF6-2.jpg" alt="Slide 1" height="400" width="800">
+                    <img src="VF6-2.jpg" alt="Slide 1">
                 </div>
                 <div class="slide" style="transform: translateX(100%);">
-                    <img src="vf6-3.jpg" alt="Slide 3" height="400" width="800">
+                    <img src="vf6-3.jpg" alt="Slide 3">
                 </div>
             </div>
             <div class="pictures">
@@ -64,8 +64,14 @@
         </div>
         
         <script src="slider.js"></script>
+        
         <div id="main-content">
             <div class="container">
+                <div id="swap">
+                    <button id="swap-buy" class="tab active">Mua xe</button>
+                    <button id="swap-sell" class="tab">Bán xe</button>
+                </div>
+                
                 <div id="main-left">
                     <h2>Mua Xe</h2>
                     <input type="text" placeholder="Nhập tên xe, hãng xe...">
@@ -112,9 +118,66 @@
             </div>
         </div>
     </div>
-    
-    <div id="main-website">
+    <script src="swap.js"></script>
+    <!-- <div id="main-content-mobile">
+            <div class="container-mobile">
+                <div id="swap">
+                    <button id="swap-buy" onclick="swapContent()">Mua xe</button>
+                    <button id="swap-sell" onclick="swapContent()">Đăng tin bán xe</button>
+                </div>
+                <div id="buy-car">
+                    <h2>Mua Xe</h2>
+                    <input type="text" placeholder="Nhập tên xe, hãng xe...">
+                    <button>Tìm kiếm</button>
+                    <div id="filter-mobile">
+                        <a href="#">Bộ lọc nâng cao:</a> 
+                        <span>Hãng xe</span> 
+                        <span>Giá tiền</span> 
+                        <span>Năm sản xuất</span> 
+                        <span>Động cơ</span> 
+                        <span>Xe nhập</span> 
+                        <span>Thêm</span>
+                    </div>
+                    
+                    <h3>Danh mục xe</h3>
+                    <div id="car-type-mobile">
+                        <div class="car">
+                            <a href="#"><img src="anh1.jpg" alt="car"></a>
+                            <a href="#"><img src="anh2.jpg" alt="car"></a>
+                            <a href="#"><img src="anh3.jpg" alt="car"></a>
+                            <a href="#"><img src="anh4.jpg" alt="car"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sell-car" style="display: none;">
+                    <h2>Đăng tin bán xe</h2>
+                    <input type="text" placeholder="Tên xe">
+                    <div class="row">
+                        <input type="text" placeholder="Hãng xe">
+                        <input type="text" placeholder="Năm sản xuất">
+                    </div>
+                    <div class="row">
+                        <input type="text" placeholder="Giá bán">
+                        <input type="text" placeholder="Số km đã đi">
+                    </div>
+                    <textarea rows="3" placeholder="Mô tả"></textarea>
+                    <div class="upload-box">Kéo thả hoặc nhấp để tải lên hình ảnh (Tối đa 10 hình)</div>
+                    <button class="button">Đăng tin ngay</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="main-website" >
+        <div class="car-list-header">
+            <h2>1000 XE CHÍNH HÃNG</h2>
+            <p>
+                <span>Đạt kiểm định chính hãng</span>
+                <span>Pháp lý an toàn</span>
+                <span>Không đâm đụng, ngập nước</span>
+            </p>
+        </div>
         <div class="car-list">
+            
             <div class="car-card">
               <div class="car-img">
                 <img src="https://e-cdn.carpla.vn/carpla-ecom/z648684594852384f093459786fc984c4b6c93957c26f2-1744258760.042.jpg?image_process=format,webp/resize,w_1920" alt="KIA Sorento">
