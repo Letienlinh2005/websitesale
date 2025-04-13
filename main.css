@@ -525,8 +525,35 @@ textarea {
     font-size: 13px;
     color: #555;
   }
-  
+#see-all-cars{
+    background-color: #1A5DA0;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#news-feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(14, 14, 225);
+    border-radius: 10px;
+}
+.news-feed-header h2{
+    
+    color: yellow;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.news-feed-header p{
+    margin-left: 0px;
 
+}
 #footer-container {
     background-color: #8AB4F8;
     color: white;
@@ -747,16 +774,36 @@ textarea {
         gap: 20px;
         padding: 0;
     }
+    .car-list-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        
+    }
+    .car-list-header h2 {
+        padding: 20px;
+    }
+    .car-list-header p {
+        display: none;
+    }
     .car-card {
         width: 90%;
-        max-width: 380px;
+        max-width: 320px;
     }
     .ads{
         display: none;
     }
+    #news-feed{
+        height: 1600px;
+        width: 100%;
+    }
+    
     .footer{
         height: 700px;
         background-color: #8AB4F8;
+        
     }
 
     .footer-section{
